@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Post, FrontPage
+
+admin.site.register(Post)
+admin.site.register(FrontPage)
