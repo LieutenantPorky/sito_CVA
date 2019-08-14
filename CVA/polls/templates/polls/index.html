@@ -26,7 +26,14 @@ body {
 
 /* Style the header */
 .header {
+  {%if images %}
+  background-image: url("{{images.image.url}}");
+  background-repeat: no-repeat;
+  float right;
+  {% else %}
   background-color: #f1f1f1;
+  {%endif%}
+
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -95,7 +102,7 @@ ul#menu li:hover {
     </ul>
 
 {% else %}
-    <p>No polls are available.</p>
+    <p>Nessuna pagina principale</p>
 {% endif %}
 
 </div>
