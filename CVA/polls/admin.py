@@ -15,6 +15,8 @@ class ArticleAdmin(admin.ModelAdmin):
         (None, {'fields': ['title','pub_date', 'bannerImage','body_text_1','body_text_2']})
     ]
 
+    list_display = ('title', 'pub_date')
+
     inlines = [PicInline]
 
 admin.site.register(Article, ArticleAdmin)
