@@ -26,14 +26,7 @@ body {
 
 /* Style the header */
 .header {
-  {%if images %}
-  background-image: url("{{images.image.url}}");
-  background-repeat: no-repeat;
-  float right;
-  {% else %}
   background-color: #f1f1f1;
-  {%endif%}
-
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -83,24 +76,17 @@ ul#menu li:hover {
 </div>
 
 <div class="header">
-   <ul id="menu">
-    <li> <a href="./home.html"> Home </a> </li>
-    <li> <a href="./article"> Articoli </a> </li>
-  </ul>
 
 </div>
 
 <div class="content">
-  <h2>Intro</h2>
+  {% if article %}
+  <h2> {{article.title}} </h2>
+  <p> {{article.body_text_1}} </p>
 
-  {% if frontPage %}
-    <ul>
-    {% for post in frontPage %}
-        <h2>{{post.title}}</h2>
-        <p>{{post.body_text}}</p>
-    {% endfor %}
-    </ul>
-
+  {%for image in images%}
+  <img src="{{image.image.url}}">
+  {%endfor%}
 {% else %}
     <p>Nessuna pagina principale</p>
 {% endif %}
