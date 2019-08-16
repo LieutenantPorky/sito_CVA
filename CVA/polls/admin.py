@@ -12,11 +12,13 @@ class PicInline(admin.TabularInline):
 
 class ArticleAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['title','pub_date', 'bannerImage','body_text_1','body_text_2']})
+        (None, {'fields': ['title','pub_date', 'bannerImage','body_text_1','body_text_2', 'slug' ]})
     ]
 
     list_display = ('title', 'pub_date')
-
+    list_filter = ['pub_date']
+    search_fields = ['title', 'body_text_1']
     inlines = [PicInline]
+    prepopulated_fields = {'slug': ['title'],}
 
 admin.site.register(Article, ArticleAdmin)

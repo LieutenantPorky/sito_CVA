@@ -3,9 +3,10 @@ from django.db import models
 
 class Post(models.Model):
     title = models.CharField('Titolo', max_length = 100)
-    body_text = models.CharField('Testo', max_length=10000)
+    body_text = models.TextField('Testo', max_length=10000)
     pub_date = models.DateTimeField('Data di pubblicazione')
     image = models.ImageField('Foto')
+    slug = models.SlugField(max_length = 250, null = True, blank = True)
 
 class FrontPage(models.Model):
     title = models.CharField('Titolo', max_length = 100)
@@ -26,10 +27,10 @@ class Article(models.Model):
     '''
     title = models.CharField('Titolo', max_length=100)
     bannerImage = models.ImageField('Foto banner', blank=True)
-    body_text_1 = models.CharField('Testo 1', max_length=10000, blank=True)
-    body_text_2 = models.CharField('Testo 2', max_length=10000, blank=True)
+    body_text_1 = models.CharField('Descrizione', max_length=10000, blank=True)
+    body_text_2 = models.TextField('Testo', max_length=10000, blank=True)
     pub_date = models.DateTimeField('Data di pubblicazione', blank=True)
-
+    slug = models.SlugField(max_length = 250, null = True, blank = True)
 
     def __str__(self):
         return "Crea un nuovo articolo"
