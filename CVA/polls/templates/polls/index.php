@@ -58,7 +58,7 @@
    <!-- Full-width images with number and caption text -->
    {%for image in images%}
    <div class="mySlides fade">
-     <div class="numbertext">1 / 3</div>
+     <div class="numbertext">{{forloop.counter}} / {{images|length}}</div>
      <img src="{{image.image.url}}" style="width:100%">
      <div class="text">{{image.image.title}}</div>
    </div>

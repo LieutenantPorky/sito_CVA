@@ -67,7 +67,7 @@ p {font-family: Roboto; }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  /*display: none;*/
 }
 
 /* Next & previous buttons */
