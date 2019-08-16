@@ -51,6 +51,34 @@
     </div>
   </div>
 
+{%if images%}
+  <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+   <!-- Full-width images with number and caption text -->
+   {%for image in images%}
+   <div class="mySlides fade">
+     <div class="numbertext">1 / 3</div>
+     <img src="{{image.image.url}}" style="width:100%">
+     <div class="text">{{image.image.title}}</div>
+   </div>
+   {%endfor%}
+
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ </div>
+ <br>
+
+ <!-- The dots/circles -->
+ <div style="text-align:center">
+   {%for image in images %}
+   <span class="dot" onclick="currentSlide({{forloop.counter}})"></span>
+   {%endfor%}
+ </div>
+ {%endif%}
+  <!-- End slideshow -->
+
   <div class="content clearfix">
 
     {% if frontPage %}
@@ -62,6 +90,7 @@
   {% else %}
       <p>Nessuna pagina principale</p>
   {% endif %}
+
 
    <img src="{%static 'polls/img/LogoFIV_CMYK.jpg'%}" alt="">
   </div>

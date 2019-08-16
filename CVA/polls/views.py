@@ -6,7 +6,7 @@ import random
 
 
 def index(request):
-    context = {'frontPage' : FrontPage.objects.all(), 'images' : FrontPic.objects.all()[random.randint(0,len(FrontPic.objects.all()) - 1)]}
+    context = {'frontPage' : FrontPage.objects.all(), 'images' : list(FrontPic.objects.all())}
     return render(request, 'polls/index.php', context)
 
 def articles(request):
