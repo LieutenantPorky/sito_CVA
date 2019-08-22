@@ -4,7 +4,12 @@
   <!--Container -->
 
   <div class="content clearfix">
-
+    <h2>Contact Us</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+    </form>
   </div>
   <br>
 

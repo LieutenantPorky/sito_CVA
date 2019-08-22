@@ -1,4 +1,10 @@
 from django.db import models
+from django import forms
+
+class Contatti(forms.Form):
+    name = forms.CharField(max_length=100)
+    email = forms.EmailField()
+    message = forms.CharField(widget=forms.Textarea)
 
 class FrontPage(models.Model):
     class Meta:
