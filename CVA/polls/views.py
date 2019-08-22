@@ -11,11 +11,10 @@ def index(request):
     return render(request, 'polls/index.php', context)
 
 def articles(request):
-    article = Article.objects.all()[random.randint(0, len(Article.objects.all()) - 1)]
-    images = article.articleimage_set.all()
-    context = {'article' : article, 'images' : images}
+    articles = Article.objects.all()
+    context = {'article' : article,}
 
-    return render(request, 'polls/article.html', context)
+    return render(request, 'polls/blog.php', context)
 
 def contatti(request):
     return render (request, 'polls/contatti.php')
