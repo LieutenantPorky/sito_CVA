@@ -31,7 +31,7 @@
    <center>
    <div class="Navbar__list animate" >
      <ul class="Header__menu clearfix" align: 'center'>
-       <li class="menu__item"><a href="" >Home</a></li>
+       <li class="menu__item"><a href="home" >Home</a></li>
        <li class="menu__item"><a href="info" >Info</a></li>
        <li class="menu__item"><a href="blog" >Blog</a></li>
        <li class="menu__item"><a href="contatti" >Contatti</a></li>
