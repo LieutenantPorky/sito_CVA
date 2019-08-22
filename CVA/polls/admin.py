@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from .models import *
 
-admin.site.register(Post)
+
 admin.site.register(FrontPage)
 
 
@@ -30,3 +30,11 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ['title'],}
 
 admin.site.register(Article, ArticleAdmin)
+
+class InstructorAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {'fields': ['name','image','description']})
+        ]
+    list_display = ['name']
+
+admin.site.register(Instructor, InstructorAdmin)
