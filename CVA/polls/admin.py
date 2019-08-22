@@ -4,7 +4,15 @@ from .models import *
 
 admin.site.register(Post)
 admin.site.register(FrontPage)
-admin.site.register(FrontPic)
+
+
+class FrontPicAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {'fields':['title','image']})
+    ]
+    list_display = ['title']
+
+admin.site.register(FrontPic, FrontPicAdmin)
 
 class PicInline(admin.TabularInline):
     model = ArticleImage
