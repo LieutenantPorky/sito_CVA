@@ -9,8 +9,9 @@
     {% for article in articles %}
     <h2> {{article.title}} </h2>
     <p class="Desc"> {{article.body_text_1}} </p>
-    {% for image in article.articleimage_set%}
+    {% for image in article.articleimage_set.all%}
     <img src="{{image.url}}" alt="">
+    {% endfor %}
     {% endfor %}
   {% else %}
       <p class="Contenuto">Nessuna pagina principale</p>

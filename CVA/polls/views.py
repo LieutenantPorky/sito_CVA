@@ -12,7 +12,7 @@ def index(request):
 
 def articles(request):
     articles = Article.objects.all()
-    context = {'article' : article,}
+    context = {'articles' : articles}
 
     return render(request, 'polls/blog.php', context)
 
