@@ -16,6 +16,8 @@ def articles(request):
 
     return render(request, 'polls/article.html', context)
 
+def contatti(request):
+    return render (request, 'polls/contatti.php')
 
 def info(request):
     return None
