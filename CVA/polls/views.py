@@ -15,3 +15,13 @@ def articles(request):
     context = {'article' : article, 'images' : images}
 
     return render(request, 'polls/article.html', context)
+
+
+def info(request):
+    return None
+
+def contatti(request):
+    return None
+
+def istruttori(request):
+    return None
