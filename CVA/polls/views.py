@@ -20,10 +20,10 @@ def contatti(request):
     return render (request, 'polls/contatti.php')
 
 def info(request):
-    return None
+    return render(request, 'polls/info.php')
 
 def contatti(request):
-    return None
+    return render(request, 'polls/contatti.php')
 
 def istruttori(request):
-    return None
+    return render(request, 'polls/istruttori.php')
