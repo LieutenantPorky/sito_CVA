@@ -39,7 +39,7 @@ class Article(models.Model):
     body_text_1 = models.CharField('Descrizione', max_length=10000, blank=True)
     body_text_2 = models.TextField('Testo', max_length=10000, blank=True)
     pub_date = models.DateTimeField('Data di pubblicazione', blank=True)
-    slug = models.SlugField(max_length = 250, null = True, blank = True)
+    slug = models.SlugField(max_length = 250, null = True, blank = True, unique=True)
 
     def __str__(self):
         return "Crea un nuovo articolo"

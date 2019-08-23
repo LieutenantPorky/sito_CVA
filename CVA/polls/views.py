@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
-import random
-from django.shortcuts import render
+from django.core.mail import send_mail, mail_admins
+
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import View
 
 
@@ -22,9 +23,9 @@ def contatti(request):
         message = request.POST['body']
     except (KeyError):
         return render (request, 'polls/contatti.php', {'debug':'mandato messaggio'})
-
     else:
         print(sender_email)
+        mail_admins('Nuovo messaggio sul sito - ' + sender_email, message )
         return render (request, 'polls/contatti.php', {'debug':'mandato messaggio'})
 
 def info(request):
@@ -36,4 +37,5 @@ def istruttori(request):
 
 #detail a single post
 def post(request, id):
-    return None
+    articles = get_object_or_404(Article, slug=id)
+    return render(request, 'polls/post.php', {'article':articles})
