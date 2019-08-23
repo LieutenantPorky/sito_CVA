@@ -19,9 +19,6 @@
       </div>
     </center>
   </form>
-  {% if debug %}
-  <p>{{debug}}</p>
-  {% endif%}
     <!-- Instagram -->
 
     <div class="social">
