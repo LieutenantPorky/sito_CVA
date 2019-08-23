@@ -17,24 +17,23 @@ def articles(request):
     return render(request, 'polls/blog.php', context)
 
 def contatti(request):
-    return render (request, 'polls/contatti.php')
+    try:
+        sender_email = request.POST['email']
+        message = request.POST['body']
+    except (KeyError):
+        return render (request, 'polls/contatti.php', {'debug':'mandato messaggio'})
+
+    else:
+        print(sender_email)
+        return render (request, 'polls/contatti.php', {'debug':'mandato messaggio'})
 
 def info(request):
     return render(request, 'polls/info.php')
 
-def contatti(request):
-    return render(request, 'polls/contatti.php')
-
 def istruttori(request):
     return render(request, 'polls/istruttori.php')
 
-def conttti(request):
-    if request.method == 'POST':
-        form = Contatti(request.POST)
-        if form.is_valid():
-            # send email code goes here
-            return HttpResponse('Thanks for contacting us!')
-    else:
-        form = Contatti()
 
-    return render(request, 'polls/contatti.php', {'form': form})
+#detail a single post
+def post(request, id):
+    return None

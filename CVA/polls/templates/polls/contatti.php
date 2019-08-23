@@ -5,12 +5,15 @@
 
   <div class="content clearfix">
     <h2>Contattaci</h2>
-    <form method="post">
+    <form action="contatti" method="post">
         {% csrf_token %}
-        Indirizzo Email: <input type="email"><br>
-        Messaggio: <input type="text"><br>
+        Indirizzo Email: <input type="email" name="email"><br>
+        Messaggio: <input type="text" name="body"><br>
         <input type="submit" value="Invia" />
     </form>
+    {% if debug %}
+    <p>{{debug}}</p>
+    {% endif%}
   </div>
   <br>
 

@@ -10,7 +10,8 @@
     <h2> {{article.title}} </h2>
     <p class="Desc"> {{article.body_text_1}} </p>
     {% for image in article.articleimage_set.all%}
-    <img src="{{image.url}}" alt="">
+    <img src="{{image.image.url}}" alt="">
+    <p>{{image.caption}}</p>
     {% endfor %}
     {% endfor %}
   {% else %}
