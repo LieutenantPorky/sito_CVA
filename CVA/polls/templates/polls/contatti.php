@@ -23,11 +23,7 @@
   <p>{{debug}}</p>
   {% endif%}
     <!-- Instagram -->
-<<<<<<< HEAD
-</div>
 
-  <br>
-=======
     <div class="social">
      <div class="instagram__conteiner">
       <a href="https://www.instagram.com/cvlatolloofficial/" >
@@ -42,8 +38,6 @@
      </div>
     </div>
    </div>
-
->>>>>>> origin/alt
 
 
 
