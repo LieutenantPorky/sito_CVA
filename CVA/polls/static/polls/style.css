@@ -43,8 +43,17 @@ p {font-family: Roboto; }
 .contatti p{color: #fff;}
 .contatti .messaggio {height: 120px; width: 90%; resize: vertical;}
 .contatti .submit {background-color: #fff; color:rgb(71, 145, 226); cursor: pointer;  height: 35px; }
-.contatti .submit:hover{}
+.social { margin-top: -300px;}
 
+.instagram__conteiner {background-color: #C13584; float: left; display: inline-flex; padding: 10px;}
+.instagram__conteiner img{width: 60px; margin-left: -5px;}
+.instagram__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 20px}
+.instagram__conteiner :hover + .instatext { width: 160px; transition: 0.3s; overflow: auto;overflow-x: hidden;}
+
+.facebook__conteiner {background-color: #3b5998; float: left; display: inline-flex; padding: 10px; height: 60px;}
+.facebook__conteiner img{width: 60px; margin-left: -5px;}
+.facebook__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 17px}
+.facebook__conteiner :hover + .facetext { width: 180px; transition: 0.3s; overflow: auto;overflow-x: hidden; overflow-y: hidden;}
 /*-----------------------------
         Smartphone
 -----------------------------*/
