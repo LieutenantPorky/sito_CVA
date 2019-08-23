@@ -16,7 +16,8 @@
    <!--NAVBAR -->
   <nav class="header ">
    <center>
-    <img src="{%static 'polls/img/LogoFIV_CMYK.jpg'%}" alt="" class="header__logo">  </div>
+    <img src="{%static 'polls/img/LogoCVL.svg'%}" alt="" class="header__logo">  </div>
+
       <hr class="Header__Hr">
 
    <div class="Menu__box ">

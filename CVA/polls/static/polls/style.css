@@ -9,15 +9,15 @@ p {font-family: Roboto; }
           Navbar
 -----------------------------*/
 .Header__menu {text-align:center; color: rgb(71, 145, 226); display: inline; margin: 0px;}
-.header__logo {width: 200px; height: 80px; object-fit: cover;}
+.header__logo {width: 130px; height: 80px; object-fit: cover;}
 .menu__item {text-align:center; display: inline; }
 .menu__item a{color: rgb(71, 145, 226); padding: 10px; font-family: 'Roboto', sans-serif; display:inline-block}
 .menu__item :hover{background-color: #eee;}
 .Burger {float: right; display: none; background-color: #000;  }
 .Burger div{width: 25px; height: 4px; background-color: rgb(71, 145, 226); margin: 5px;}
-.map__navbar {display: none;}
 .animate {transition: 0.2s ease-out}
 
+.map__navbar {display: none;}
 /*-----------------------------
           Side Bar
 -----------------------------*/
@@ -27,15 +27,24 @@ p {font-family: Roboto; }
 .map {width: 600; height: 270px; border:0;}
 
 /*-----------------------------
-          Content
+          |  Content  |
 -----------------------------*/
 .content {height: 100%; width: 100%; position:}
-.content p {margin: 6px;}
+.content p {margin: 6px; display: inline;}
 .content img {width: 50%; margin-left: 10%;}
 
 /*-----------------------------
-          Articoli
+         Contatti
 -----------------------------*/
+.contatti {font-family: Roboto; background-color: rgb(71, 145, 226); width: 25%; margin-top: 30px;}
+.contatti__copy {padding: 18px;}
+.contatti input {border: 0; width: 90%; height: 30px; font-size: 100%;}
+.contatti h2 {color: #fff}
+.contatti p{color: #fff;}
+.contatti .messaggio {height: 120px; width: 90%; resize: vertical;}
+.contatti .submit {background-color: #fff; color:rgb(71, 145, 226); cursor: pointer;  height: 35px; }
+.contatti .submit:hover{}
+
 /*-----------------------------
         Smartphone
 -----------------------------*/
@@ -46,7 +55,7 @@ p {font-family: Roboto; }
 .Burger {display: block; margin-top: -65px; background-color: #fff; margin-right: 10px;}
 .Burger a{display: block; transition: 0.2s ease-out; transition: all cubic-bezier(0.26, 0.1, 0.27) 0.35s}
 .Header__Hr {display: none;}
-.Menu__box {margin-top: -100px; position: absolute; right: 25px;}
+.Menu__box {margin-top: -100px; position: absolute; right: 25px; }
 .Menu__box ul {margin-top: 20px; }
 .Navbar__list { height: 93vh;  background-color: #fff; width: 0%;
  position: absolute; float: right; right: 0px; overflow: hidden;}
@@ -54,4 +63,8 @@ p {font-family: Roboto; }
 .is-open { width: 55%; overflow: auto;}
 /* SideBar */
 .sidebar {display: none;}
+/* Contatti */
+.contatti {width: 80%; }
+
+
 }
