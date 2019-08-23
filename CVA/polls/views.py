@@ -32,7 +32,8 @@ def info(request):
     return render(request, 'polls/info.php')
 
 def istruttori(request):
-    return render(request, 'polls/istruttori.php')
+    insts = Instructor.objects.all()
+    return render(request, 'polls/istruttori.php', {'insts': insts})
 
 
 #detail a single post

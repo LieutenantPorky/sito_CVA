@@ -35,7 +35,3 @@
      </div>
     </div>
    </div>
-
-
-
-{% include 'polls/footer.php' %} <!-- Footer -->

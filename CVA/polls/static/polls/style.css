@@ -43,7 +43,7 @@ p {font-family: Roboto; }
 .contatti p{color: #fff;}
 .contatti .messaggio {height: 120px; width: 90%; resize: vertical;}
 .contatti .submit {background-color: #fff; color:rgb(71, 145, 226); cursor: pointer;  height: 35px; }
-.social { margin-top: -300px;}
+.social { margin-top: -300px; margin-left: 5px; }
 
 .instagram__conteiner {background-color: #C13584; float: left; display: inline-flex; padding: 10px;}
 .instagram__conteiner img{width: 60px; margin-left: -5px;}
@@ -74,6 +74,9 @@ p {font-family: Roboto; }
 .sidebar {display: none;}
 /* Contatti */
 .contatti {width: 80%; }
-
-
+.social {margin-top: 10px;margin-left: 50px;}
+.instagram__conteiner {width: 180px; overflow: auto;}
+.facebook__conteiner {width: 180px; overflow: auto;}
+.facebook__conteiner p {margin-top: 18px; width: 220px; font-size: 17px}
+.instagram__conteiner p {margin-top: 18px; width: 220px; font-size: 17px}
 }
