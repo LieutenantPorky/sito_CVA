@@ -26,7 +26,7 @@ def contatti(request):
     else:
         print(sender_email)
         mail_admins('Nuovo messaggio sul sito - ' + sender_email, message )
-        return render (request, 'polls/contatti.php', {'debug':'mandato messaggio'})
+        return render (request, 'polls/contatti.php')
 
 def info(request):
     return render(request, 'polls/info.php')
