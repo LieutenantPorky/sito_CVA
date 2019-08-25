@@ -37,7 +37,6 @@ p {font-family: 'Roboto';
 -----------------------------*/
 .cover {width: 100%; height: 100%; background-repeat: no-repeat; background-size: 100%;
 display: grid; min-height: 100%; background-position: center center;
-background-image: url(https://bit.ly/2ZqdurA);
 -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

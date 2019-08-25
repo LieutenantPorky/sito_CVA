@@ -8,7 +8,11 @@ from django.views.generic import View
 
 
 def index(request):
-    context = {'frontPage' : FrontPage.objects.all(), 'images' : list(FrontPic.objects.all())}
+    if FrontPic.objects.all():
+        context = {'frontPage' : FrontPage.objects.all(), 'images' : list(FrontPic.objects.all())[0]}
+    else:
+        context = {'frontPage' : FrontPage.objects.all(), 'images' : None}
+
     return render(request, 'polls/index.php', context)
 
 def articles(request):

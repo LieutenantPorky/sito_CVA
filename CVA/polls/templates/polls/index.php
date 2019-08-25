@@ -1,6 +1,17 @@
 {% load static %} <!-- Load Statics -->
 {% include 'polls/header.php' %} <!-- Header -->
  <!-- Cover -->
+
+<style>
+.cover{
+  {% if images %}
+  background-image: url({{images.image.url}});
+  {% else %}
+    background-image: url(https://bit.ly/2ZqdurA);
+  {% endif %}
+}
+</style>
+
 <div class="cover">
   <div class="cover__text">
 
