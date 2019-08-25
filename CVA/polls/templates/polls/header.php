@@ -6,9 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="{%static 'polls/style.css' %}">
-   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Lobster|Noto+Sans+JP&display=swap" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
    <title>Cvl</title>
+
    <script type="text/javascript" src="{% static 'polls/scripts.js' %}"></script>
  </head>
  <body>
@@ -19,8 +20,6 @@
     <img src="{%static 'polls/img/LogoCVL.svg'%}" alt="" class="header__logo">  </div>
 
       <hr class="Header__Hr">
-
-   <div class="Menu__box ">
      </center>
 
      <div class="Burger"> <a href="">
@@ -43,6 +42,6 @@
     </div>
 
    </center>
-   </div>
+
    <hr class="Header__Hr">
   </nav>
