@@ -19,8 +19,8 @@
       </div>
     </center>
   </form>
-    <!-- Instagram -->
 
+  <!-- Instagram -->
     <div class="social">
      <div class="instagram__conteiner">
       <a href="https://www.instagram.com/cvlatolloofficial/" >
@@ -28,10 +28,26 @@
       </a>  <p class="instatext"> @cvlatolloofficial</p>
      </div> <br> <br> <br> <br> <br>
 
+  <!-- FaceBook -->
      <div class="facebook__conteiner">
-      <a href="https://www.instagram.com/cvlatolloofficial/" >
+      <a href="https://bit.ly/2zjaEKe" >
       <img class="faceimg" src="{%static 'polls/img/facebook.png'%}" alt="">
       </a>  <p class="facetext"> Centro Velico L'Atollo</p>
      </div>
     </div>
-   </div>
+  <!-- Mobile -->
+        <div class="social__phone">
+          <div class="insta__phone">
+            <a href="https://www.instagram.com/cvlatolloofficial/">
+             <img src="{%static 'polls/img/instagram.jpg'%}" alt=""></a>
+          </div>
+          <div class="face__phone">
+            <a href="https://bit.ly/2zjaEKe">
+             <img src="{%static 'polls/img/facebook.png'%}" alt=""></a>
+          </div>
+          <div class="fiv__phone">
+            <a href="http://www.federvela.it/">
+             <img src="{%static 'polls/img/LogoFIV.jpg'%}" alt=""></a>
+          </div>
+        </div>
+        </div>

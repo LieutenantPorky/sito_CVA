@@ -29,10 +29,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+STATIC_URL = '/static/'
 # Application definition
 
 INSTALLED_APPS = [
+
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',

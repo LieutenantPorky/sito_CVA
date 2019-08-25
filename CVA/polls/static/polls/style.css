@@ -4,35 +4,49 @@ html, body {width: 100%;height: 100%;}
 body {min-height:100%;}
 p {font-family: Roboto; }
 .footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px; position: absolute;}
-
 /*-----------------------------
           Navbar
 -----------------------------*/
 .Header__menu {text-align:center; color: rgb(71, 145, 226); display: inline; margin: 0px;}
-.header__logo {width: 130px; height: 80px; object-fit: cover;}
+.header__logo {width: 130px; height: 70px; object-fit: cover;}
 .menu__item {text-align:center; display: inline; }
 .menu__item a{color: rgb(71, 145, 226); padding: 10px; font-family: 'Roboto', sans-serif; display:inline-block}
 .menu__item :hover{background-color: #eee;}
 .Burger {float: right; display: none; background-color: #000;  }
-.Burger div{width: 25px; height: 4px; background-color: rgb(71, 145, 226); margin: 5px;}
+.Burger div{width: 27px; height: 5px; background-color: rgb(71, 145, 226); margin: 5px;}
 .animate {transition: 0.2s ease-out}
-
 .map__navbar {display: none;}
 /*-----------------------------
           Side Bar
 -----------------------------*/
-.sidebar {height: auto; width: 30%; float: right; margin-bottom: 30px; position: relative;}
+.sidebar {height: auto; width: 30%; float: right; margin-bottom: 30px; position: relative; background-color: #eee;}
 .sidebar__copy {margin: 8px; padding: 10px; max-width: 100%;}
 .slideshow-container {position: relative !important;}
 .map {width: 600; height: 270px; border:0;}
 
 /*-----------------------------
-          |  Content  |
+        |  Content  |
 -----------------------------*/
 .content {height: 100%; width: 100%; position:}
 .content p {margin: 6px; display: inline;}
-.content img {width: 50%; margin-left: 10%;}
+.content img {width: 50%;}
 
+/*-----------------------------
+         Cover
+-----------------------------*/
+.cover {width: 100%; height: 100%; background-repeat: no-repeat; background-size: 100%;
+display: grid; min-height: 100%; background-position: center center;
+background-image: url(https://bit.ly/2ZqdurA);
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+.cover__text {color: #fff; margin: auto; text-align: center; padding: 50px;}
+.cover__text h1{font-family: 'Lobster'; margin-bottom: 10px;}
+.cover__botton {background-color: #fff; width: 60px; color: #4791e2; padding: 10px; margin-top: 15px;}
+.cover__botton a{font-size: 110%;}
+.cover__botton a:visited{color: #4791e2 ;}
 /*-----------------------------
          Contatti
 -----------------------------*/
@@ -44,6 +58,7 @@ p {font-family: Roboto; }
 .contatti .messaggio {height: 120px; width: 90%; resize: vertical;}
 .contatti .submit {background-color: #fff; color:rgb(71, 145, 226); cursor: pointer;  height: 35px; }
 .social { margin-top: -300px; margin-left: 5px; }
+.social__phone {display: none;}
 
 .instagram__conteiner {background-color: #C13584; float: left; display: inline-flex; padding: 10px;}
 .instagram__conteiner img{width: 60px; margin-left: -5px;}
@@ -54,6 +69,7 @@ p {font-family: Roboto; }
 .facebook__conteiner img{width: 60px; margin-left: -5px;}
 .facebook__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 17px}
 .facebook__conteiner :hover + .facetext { width: 180px; transition: 0.3s; overflow: auto;overflow-x: hidden; overflow-y: hidden;}
+
 /*-----------------------------
         Smartphone
 -----------------------------*/
@@ -61,22 +77,26 @@ p {font-family: Roboto; }
 /* Header */
 .menu__item {display: flex; flex-direction: column;  }
 .menu__item a {color: rgb(71, 145, 226); margin-right: 0; }
-.Burger {display: block; margin-top: -65px; background-color: #fff; margin-right: 10px;}
-.Burger a{display: block; transition: 0.2s ease-out; transition: all cubic-bezier(0.26, 0.1, 0.27) 0.35s}
+.Burger {display: block; margin-top: -55px; background-color: #fff; margin-right: 10px;}
+.Burger a{display: block; }
 .Header__Hr {display: none;}
-.Menu__box {margin-top: -100px; position: absolute; right: 25px; }
-.Menu__box ul {margin-top: 20px; }
 .Navbar__list { height: 93vh;  background-color: #fff; width: 0%;
  position: absolute; float: right; right: 0px; overflow: hidden;}
 .map__navbar {border: 0; padding: 10px; width: 90%; display: block;}
 .is-open { width: 55%; overflow: auto;}
 /* SideBar */
 .sidebar {display: none;}
+/* Cover */
+.cover__text {margin-top: 60px;}
 /* Contatti */
 .contatti {width: 80%; }
-.social {margin-top: 10px;margin-left: 50px;}
+.social {display: none;}
 .instagram__conteiner {width: 180px; overflow: auto;}
-.facebook__conteiner {width: 180px; overflow: auto;}
+.facebook__conteiner {}
 .facebook__conteiner p {margin-top: 18px; width: 220px; font-size: 17px}
 .instagram__conteiner p {margin-top: 18px; width: 220px; font-size: 17px}
-}
+.social__phone {display: inline-flex; margin-top: 10px; padding: 3px;margin-left: 38px;}
+.insta__phone img{width: 60px; background-color: #C13584; padding: 10px;}
+.face__phone img{width: 60px; background-color: #3b5998 ; padding: 10px; margin-left: 5px;}
+.fiv__phone img{width: 59px; height: 59px; background-color: #fff ; padding: 10px; margin-left: 5px; object-fit: cover;
+border: solid 1px rgb(71, 145, 226);}
