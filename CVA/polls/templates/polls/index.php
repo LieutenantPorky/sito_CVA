@@ -8,4 +8,5 @@
   </div>
   <br>
 
+
 {% include 'polls/footer.php' %} <!-- Footer -->

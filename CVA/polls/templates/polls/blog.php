@@ -7,12 +7,11 @@
     <div class="articles">
     {% if articles %}
     {% for article in articles %}
-    <h2> {{article.title}} </h2>
-    <p class="Desc"> {{article.body_text_1}} </p>
-    {% for image in article.articleimage_set.all%}
-    <img src="{{image.image.url}}" alt="">
-    <p>{{image.caption}}</p>
-    {% endfor %}
+    <centering>
+    <h2> <a href="/polls/blog/{{article.slug}}"> {{article.title}} </a></h2> <br>
+    <hr>
+    <br>
+  </centering>
     {% endfor %}
   {% else %}
       <p class="Contenuto">Nessuna pagina principale</p>
