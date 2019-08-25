@@ -5,22 +5,23 @@
 
   <div class="content clearfix">
     <div class="articles">
-    {% if articles %}
-    {% for article in articles %}
-    <centering>
-    <h2> <a href="/polls/blog/{{article.slug}}"> {{article.title}} </a></h2> <br>
-    {% if article.bannerImage %}
-    <img src="{{article.bannerImage.url}}">
-    {% endif %}
-    <hr>
-    <br>
-  </centering>
-    {% endfor %}
+      <div class="article">
+        {% if articles %}
+        {% for article in articles %}
+        <!-- img -->
+        {% if article.bannerImage %}
+        <img src="{{article.bannerImage.url}}">
+        {% endif %}
+        <h2> <a href="/polls/blog/{{article.slug}}"> {{article.title}} </a></h2>
+        <p>{{article.body_text_1}}</p>
+
+    <br> <br> <br> <br>
+ <hr>
+          {% endfor %}
+      </div>
   {% else %}
       <p class="Contenuto">Nessuna pagina principale</p>
   {% endif %}
   </div>
   </div>
   <br>
-
-{% include 'polls/footer.php' %} <!-- Footer -->

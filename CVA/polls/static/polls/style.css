@@ -1,10 +1,10 @@
 *{ margin: 0; padding: 0; list-style-type: none;}
 a {text-decoration: none; cursor: pointer;}
-html, body {width: 100%;height: 100%;}
+html, body {width: 100%;height: 100%; background-color: #fff;}
 body {min-height:100%;}
 p {font-family: 'Roboto';
 ; }
-.footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px; position: absolute;}
+.footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px;display: block;}
 /*-----------------------------
           Navbar
 -----------------------------*/
@@ -70,6 +70,15 @@ display: grid; min-height: 100%; background-position: center center;
 .facebook__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 17px}
 .facebook__conteiner :hover + .facetext { width: 180px; transition: 0.3s; overflow: auto;overflow-x: hidden; overflow-y: hidden;}
 
+/*-----------------------------
+          Navbar
+-----------------------------*/
+.articles {padding: 20px;}
+.article img{float: left; object-fit: cover; width: 100px; height: 100px; padding: 10px;  }
+.article h2{padding: 10px; font-family: 'Noto Sans'; color: #4791e2;}
+.article a:visited{ color: #4791e2;}
+.article a:hover{color: #1964b5;}
+.article hr{color: #4791e2;}
 /*-----------------------------
         Smartphone
 -----------------------------*/
