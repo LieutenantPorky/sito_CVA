@@ -3,7 +3,7 @@ a {text-decoration: none; cursor: pointer;}
 html, body {width: 100%;height: 100%; background-color: #fff;}
 body {min-height:100%;}
 p, a{font-family: 'Roboto';}
-.footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px;display: block;}
+.footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px;display: block; }
 /*-----------------------------
           Navbar
 -----------------------------*/
