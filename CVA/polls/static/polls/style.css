@@ -2,8 +2,7 @@
 a {text-decoration: none; cursor: pointer;}
 html, body {width: 100%;height: 100%; background-color: #fff;}
 body {min-height:100%;}
-p {font-family: 'Roboto';
-; }
+p, a{font-family: 'Roboto';}
 .footer {font-family: Roboto; color:  rgb(71, 145, 226); padding: 10px;display: block;}
 /*-----------------------------
           Navbar
@@ -23,13 +22,13 @@ p {font-family: 'Roboto';
 .sidebar {height: auto; width: 30%; float: right;  background-color: #eee;}
 .sidebar__copy {margin: 8px; padding: 10px; max-width: 100%;}
 .slideshow-container {}
-.map {width: 96%; height: 270px; border:0;}
+.map {width: 96%; height: 270px; border:0;} /*Mappa*/
 
 /*-----------------------------
         |  Content  |
 -----------------------------*/
-.content {height: 100%; width: 100%; position:}
-.content p {margin: 6px; display: inline;}
+.content {height: 100%; width: 100%; display: block;}
+.content p {display: inline;}
 .content img {width: 50%;}
 
 /*-----------------------------
@@ -41,12 +40,31 @@ display: grid; min-height: 100%; background-position: center center;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;}
-
 .cover__text {color: #fff; margin: auto; text-align: center; padding: 50px;}
 .cover__text h1{font-family: 'Lobster'; margin-bottom: 10px;}
 .cover__botton {background-color: #fff; width: 70px; color: #4791e2; padding: 8px; margin-top: 15px;}
 .cover__botton a{font-size: 110%; font-family: 'Noto Sans JP';}
 .cover__botton a:visited{color: #4791e2;}
+
+/*-----------------------------
+          Blog
+-----------------------------*/
+.articles {padding: 20px;}
+.article img{float: left; object-fit: cover; width: 100px; height: 100px; padding: 10px;  }
+.article h2{padding: 10px; font-family: 'Noto Sans'; color: #4791e2;}
+.article a:visited{ color: #4791e2;}
+.article a:hover{color: #1964b5;}
+.article hr{color: #4791e2;}
+/*-----------------------------
+          Articles
+-----------------------------*/
+.singel__article { width: 70%; height: auto ;}
+.article__text {padding: 30px; margin-left: 100px; margin-right: 100px;
+ background-color: #eee; margin-top: -50px; position: relative;}
+.Desc {font-style: italic; color: #909090; font-size: 20px; display: block; }
+.singel__article h2{text-align: center; font-size: 33px; font-family: Noto Sans; color: #4791e2;}
+.singel__article img{width: 95%; margin-top: 20px; height: 400px; object-fit: cover;}
+
 /*-----------------------------
          Contatti
 -----------------------------*/
@@ -70,15 +88,7 @@ display: grid; min-height: 100%; background-position: center center;
 .facebook__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 17px}
 .facebook__conteiner :hover + .facetext { width: 180px; transition: 0.3s; overflow: auto;overflow-x: hidden; overflow-y: hidden;}
 
-/*-----------------------------
-          Navbar
------------------------------*/
-.articles {padding: 20px;}
-.article img{float: left; object-fit: cover; width: 100px; height: 100px; padding: 10px;  }
-.article h2{padding: 10px; font-family: 'Noto Sans'; color: #4791e2;}
-.article a:visited{ color: #4791e2;}
-.article a:hover{color: #1964b5;}
-.article hr{color: #4791e2;}
+
 /*-----------------------------
         Smartphone
 -----------------------------*/
@@ -89,7 +99,7 @@ display: grid; min-height: 100%; background-position: center center;
 .Burger {display: block; margin-top: -55px; background-color: #fff; margin-right: 10px;}
 .Burger a{display: block; }
 .Header__Hr {display: none;}
-.Navbar__list { height: 93vh;  background-color: #fff; width: 0%;
+.Navbar__list {height: 93vh;  background-color: #fff; width: 0%;
  position: absolute; float: right; right: 0px; overflow: hidden;}
 .map__navbar {border: 0; padding: 10px; width: 90%; display: block;}
 .is-open { width: 55%; overflow: auto;}
@@ -97,6 +107,11 @@ display: grid; min-height: 100%; background-position: center center;
 .sidebar {display: none;}
 /* Cover */
 .cover__text {margin-top: 60px;}
+/* Articles */
+.singel__article {width: 100%;}
+.singel__article img {margin: 0; height: 300px;}
+.article__text {margin-left: 0px; margin-right: 0px; background-color: #fff; position: inherit;}
+
 /* Contatti */
 .contatti {width: 80%; }
 .social {display: none;}

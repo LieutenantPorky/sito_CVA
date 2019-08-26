@@ -13,7 +13,7 @@
         <img src="{{article.bannerImage.url}}">
         {% endif %}
         <h2> <a href="/polls/blog/{{article.slug}}"> {{article.title}} </a></h2>
-        <p>{{article.body_text_1}}</p>
+        <p>{{article.body_text_1|truncatewords_html:25}}</p>
 
     <br> <br> <br> <br>
  <hr>
