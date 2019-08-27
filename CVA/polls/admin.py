@@ -31,10 +31,12 @@ class ArticleAdmin(admin.ModelAdmin):
 
 admin.site.register(Article, ArticleAdmin)
 
-class InstructorAdmin(admin.ModelAdmin):
+class IstruttoriAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['name','image','description']})
-        ]
-    list_display = ['name']
+        (None, {'fields': ['title','image','desc']})
 
-admin.site.register(Instructor, InstructorAdmin)
+]
+    list_display = ['title']
+    
+
+admin.site.register(Istruttori, IstruttoriAdmin)

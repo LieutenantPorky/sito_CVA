@@ -11,7 +11,6 @@
        </div>
      </div>
 
-<a href="#" class="Next-slide"> Roba</a>
 {% include 'polls/sidebar.php' %} <!-- SideBar -->
   <!--Container -->
   <div class="content clearfix" >
