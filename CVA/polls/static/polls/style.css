@@ -34,6 +34,7 @@ p, a{font-family: 'Roboto';}
 /*-----------------------------
          Cover
 -----------------------------*/
+.cover__container {width: 100%;height: 100%;}
 .cover {width: 100%; height: 100%; background-repeat: no-repeat; background-size: 100%;
 display: grid; min-height: 100%; background-position: center center;
 -webkit-background-size: cover;
@@ -45,7 +46,15 @@ display: grid; min-height: 100%; background-position: center center;
 .cover__botton {background-color: #fff; width: 70px; color: #4791e2; padding: 8px; margin-top: 15px;}
 .cover__botton a{font-size: 110%; font-family: 'Noto Sans JP';}
 .cover__botton a:visited{color: #4791e2;}
+.one{background-image: url(https://bit.ly/2ZqdurA);}
+.two{background-image: url(https://bit.ly/2ZC8Yup);}
+.tree {background-image: url(https://bit.ly/2NEkGOm);}
+/*-----------------------------
+          slider
+-----------------------------*/
+#slideshow {position: relative; width: 100%;height: 100%;}
 
+#slideshow > div {position: absolute;top: 0px;left: 0px;right: 0px;bottom: 0px;}
 /*-----------------------------
           Blog
 -----------------------------*/
@@ -88,7 +97,10 @@ display: grid; min-height: 100%; background-position: center center;
 .facebook__conteiner p {margin-top: 18px; width: 0px; overflow: hidden; color: #fff; font-size: 17px}
 .facebook__conteiner :hover + .facetext { width: 180px; transition: 0.3s; overflow: auto;overflow-x: hidden; overflow-y: hidden;}
 
-
+@media  screen and (max-width: 768px) {
+/*FaceBook*/
+.facebook {width: 100%;}
+}
 /*-----------------------------
         Smartphone
 -----------------------------*/
@@ -109,9 +121,8 @@ display: grid; min-height: 100%; background-position: center center;
 .cover__text {margin-top: 60px;}
 /* Articles */
 .singel__article {width: 100%;}
-.singel__article img {margin: 0; height: 300px;}
+.singel__article img {margin: 0; height: 250px; width: 85%; margin-top: 10px;}
 .article__text {margin-left: 0px; margin-right: 0px; background-color: #fff; position: inherit;}
-
 /* Contatti */
 .contatti {width: 80%; }
 .social {display: none;}

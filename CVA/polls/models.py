@@ -41,6 +41,7 @@ class Article(models.Model):
     pub_date = models.DateTimeField('Data di pubblicazione', blank=True)
     slug = models.SlugField(max_length = 250, null = True, blank = True, unique=True)
 
+
     def __str__(self):
         return "Crea un nuovo articolo"
 
