@@ -4,7 +4,7 @@
   <!--Container -->
 
   <div class="content clearfix">
-    {% if Istruttori %}
+    {% if Istrutctor %}
     <!-- img -->
     {% if Istruttori.image %}
     <center>

@@ -49,6 +49,9 @@ class Article(models.Model):
 
 #Istruttori
 class Istruttori(models.Model):
+    class Meta:
+         verbose_name = 'Istruttore'
+         verbose_name_plural = 'Istruttori'
     title = models.CharField('Nome', max_length=100)
     image = models.ImageField('Foto', blank=True)
     desc = models.TextField('Descrizione', max_length=10000, blank=True)
