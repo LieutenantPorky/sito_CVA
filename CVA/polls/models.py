@@ -47,18 +47,6 @@ class Article(models.Model):
     def __str__(self):
         return "Crea un nuovo articolo"
 
-#Istruttori
-class Istruttori(models.Model):
-    class Meta:
-         verbose_name = 'Istruttore'
-         verbose_name_plural = 'Istruttori'
-    title = models.CharField('Nome', max_length=100)
-    image = models.ImageField('Foto', blank=True)
-    desc = models.TextField('Descrizione', max_length=10000, blank=True)
-    slug = models.SlugField(max_length = 250, null = True, blank=True, unique=True)
-
-    def __str__(self):
-        return "Crea un nuovo articolo"
 
 #img
 class ArticleImage(models.Model):

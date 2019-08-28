@@ -33,10 +33,10 @@ admin.site.register(Article, ArticleAdmin)
 
 class IstruttoriAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None, {'fields': ['title','image','desc']})
+        (None, {'fields': ['name','image','description']})
 
 ]
-    list_display = ['title']
-    
+    list_display = ['name']
 
-admin.site.register(Istruttori, IstruttoriAdmin)
+
+admin.site.register(Instructor, IstruttoriAdmin)

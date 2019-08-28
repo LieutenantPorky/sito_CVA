@@ -4,17 +4,16 @@
   <!--Container -->
 
   <div class="content clearfix">
-    {% if Istrutctor %}
-    <!-- img -->
-    {% if Istruttori.image %}
+    {% if insts %}
+    {% for inst in insts %}
     <center>
-    <img src="{{istruttori.bannerImage.url}}"> </center>
-    {% endif %} <br>
+    <img src="{{inst.image.url}}"> </center>} <br>
     <div class="article__text">
-      <h2> {{Istruttori.title}} </h2>
-      <p class="Desc"> {{Istruttori.desc} </p> <br> <br>
+      <h2> {{inst.name}} </h2>
+      <p class="Desc"> {{inst.description}} </p> <br> <br>
 
     </div>
+    {% endfor %}
   {% else %}
       <p class="Contenuto">Nessuna pagina principale</p>
   {% endif %}
